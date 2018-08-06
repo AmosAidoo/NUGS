@@ -3,11 +3,15 @@ html {
 }
 
 body {
-  width: 100%;
+  max-width:100%;
   position: relative;
   min-height: 100%;
   padding-bottom: 80px;
   overflow-x: hidden;
+}
+
+.navbar{
+  max-width:100%;
 }
 
 #mainNavbar li {}
@@ -83,7 +87,7 @@ footer {
   width: 50%;
   height: 400px;
   margin-right: 10px;
-  background: url("../images/homepage/flag.jpg")center no-repeat;
+  background: url("../images/homepage/ghana-flag.jpg")center no-repeat;
   background-size: 100% 100%;
   color: white;
   text-align: center;
@@ -150,6 +154,20 @@ footer {
   color: #565B21;
 }
 
+/*Blog Start*/
+#mainBody {
+  margin-top: 70px;
+}
+
+#blogSidebar {
+  padding-top: 60px;
+}
+
+.featured-carousel-cell {
+  height: 200px;
+}
+/*Blog End*/
+
 
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
@@ -168,7 +186,9 @@ if it's not present, don't show loader */
 
 /*Media Queries*/
 @media (max-width: 575.98px) {
-
+  #president-img {
+    margin-left: 0% !important;
+  }
 }
 
 
@@ -190,6 +210,10 @@ if it's not present, don't show loader */
 
 
 @media (max-width: 991.98px) {
+  #upcoming {
+    margin: auto !important;
+  }
+
   .carousel-cell {
     width: 100%;
   }

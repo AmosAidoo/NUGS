@@ -10,14 +10,7 @@
 
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-	<!--Flickity-->
-	<!-- CSS -->
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<!-- JavaScript -->
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><
 	<title>NUGS UKRAINE</title>
 </head>
 <body>
@@ -29,7 +22,10 @@
         });
 
         //Initialise AOS
-        AOS.init();  
+        AOS.init(); 
+
+        $("#mainNavbar").removeClass("bg-white");
+		$("#mainNavbar").addClass("bg-transparent");
     </script>
 
 
@@ -155,7 +151,7 @@
 					</p>
 				</div>
 
-				<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+				<div id="upcoming" class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
 					<h4 class="text-nugs-1">Upcoming Events</h4>
 					<p class="lead">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -176,8 +172,10 @@
 		<h1 class="display-4 text-nugs-2" data-aos="flip-up" data-aos-duration="800" data-aos-easing="ease-in-linear" data-aos-delay="200">NUGS-UA</h1>
 		<div class="left-carousel" data-flickity='{ "autoPlay": true , "wrapAround": true }'>
 			<div class="carousel-cell">
-				<h1>
-					ALUTA CONTINUA ALUTA VICTORIA
+				<h1 class="mt-4">
+					ALUTA CONTINUA<br><br><br>
+
+					ALUTA VICTORIA
 				</h1>
 			</div>
 			<div class="carousel-cell">
@@ -367,6 +365,12 @@
 
 	<!--Footer-->
 	<?php include_once 'includes/footer.php'?>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#homeLink').addClass('activeTab');
+		});
+	</script>
 
 </body>
 </html>

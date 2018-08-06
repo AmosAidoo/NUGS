@@ -1,8 +1,6 @@
 $(function(){
 
 	//Do this when the page loads
-	$("#mainNavbar").removeClass("bg-white");
-	$("#mainNavbar").addClass("bg-transparent");
 
 	if($(window).scrollTop() > $("#nugs-first").offset().top){
 		$("#mainNavbar").removeClass("bg-transparent");

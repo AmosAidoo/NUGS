@@ -1,6 +1,6 @@
 <!-- Required meta tags -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"">
 <meta name="description" content="">
 <meta name="keywords" content="">
 
@@ -19,3 +19,13 @@
 
 <!--Custom JS-->
 <script type="text/javascript" src="scripts/js.js"></script>
+
+<!--Flickity-->
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+<!--Favicon-->
+<?php include_once 'favicon.php'?>
