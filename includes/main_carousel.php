@@ -3,11 +3,13 @@
 		<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#mainCarousel" data-slide-to="1"></li>
 		<li data-target="#mainCarousel" data-slide-to="2"></li>
+		<li data-target="#mainCarousel" data-slide-to="3"></li>
+		<li data-target="#mainCarousel" data-slide-to="4"></li>
 	</ol>
 
-	<div class="carousel-inner ">
+	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img class="d-block w-100" src="https://previews.123rf.com/images/nomadsoul1/nomadsoul11512/nomadsoul1151200103/49820654-professor-in-glasses-thinking-about-math-formulas.jpg" alt="First slide">
+			<img class="d-block w-100" src="images/homepage/carousel/nugs 5.jpg" alt="First slide">
 			<div class="carousel-caption d-none d-md-block">
 				<h3>NUGS UKRAINE</h3>
 				<p>PROMOTING GHANA IN UKRAINE</p>
@@ -15,7 +17,7 @@
 		</div>
 
 		<div class="carousel-item">
-			<img class="d-block w-100" src="https://previews.123rf.com/images/nomadsoul1/nomadsoul11512/nomadsoul1151200103/49820654-professor-in-glasses-thinking-about-math-formulas.jpg" alt="Second slide">
+			<img class="d-block w-100" src="images/homepage/carousel/nugs 2.jpg" alt="Second slide">
 			<div class="carousel-caption d-none d-md-block">
 				<h5>NUGS UKRAINE</h5>
 				<p>PROMOTING GHANA IN UKRAINE</p>
@@ -23,7 +25,23 @@
 		</div>
 
 		<div class="carousel-item">
-			<img class="d-block w-100" src="https://previews.123rf.com/images/nomadsoul1/nomadsoul11512/nomadsoul1151200103/49820654-professor-in-glasses-thinking-about-math-formulas.jpg" alt="Third slide">
+			<img class="d-block w-100" src="images/homepage/carousel/nugs 3.jpg" alt="Third slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>NUGS UKRAINE</h5>
+				<p>PROMOTING GHANA IN UKRAINE</p>
+			</div>
+		</div>
+
+		<div class="carousel-item">
+			<img class="d-block w-100" src="images/homepage/carousel/nugs 4.jpg" alt="Fourth slide">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>NUGS UKRAINE</h5>
+				<p>PROMOTING GHANA IN UKRAINE</p>
+			</div>
+		</div>
+
+		<div class="carousel-item">
+			<img class="d-block w-100" src="images/homepage/carousel/nugs 1.jpg" alt="Fifth slide">
 			<div class="carousel-caption d-none d-md-block">
 				<h5>NUGS UKRAINE</h5>
 				<p>PROMOTING GHANA IN UKRAINE</p>

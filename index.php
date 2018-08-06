@@ -25,13 +25,7 @@
 	<script type="text/javascript">
         // Wait for window load
         $(window).load(function() {
-            // Animate loader off screen
-            /*setTimeout(function(){
-                $(".se-pre-con").fadeOut("slow");;
-            },3000);*/
-
             $(".se-pre-con").fadeOut("slow");;
-            
         });
 
         //Initialise AOS
@@ -54,7 +48,7 @@
 		<i class="fas fa-angle-up fa-3x pl-2"></i>
 	</a>
 
-	<!--Notto Section-->
+	<!--Motto Section-->
 	<div id="nugs-first" class="jumbotron jumbotron-fluid bg-white mt-0">
 		<div class="container">
 			<div class="row">
@@ -94,12 +88,13 @@
 	</div>
 	<!--End of Motto Section-->
 
+
 	<!--WELCOME NOTE-->
 	<div id="welcome-section" class="w-100 bg-light">
 		<div class="container pt-4 pb-4">
 			<div class="row">
 				<div class="col-md-4" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
-					<img id="by" class="img-fluid rounded-circle mx-auto" src="images/homepage/user_transparent_back.jpg" alt="Note By">
+					<img id="by" class="img-fluid rounded-circle mx-auto" src="images/homepage/president.jpg" alt="Note By">
 				</div>
 
 				<div id="welcome-note-col" class="col-md-8"  data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" data-aos-delay="200">
@@ -115,10 +110,70 @@
 			</div>
 		</div>
 	</div>
+	<!--END OF WELCOME SECTION-->
+
+	<!--ABOUT NUGS UKRAINE-->
+	<div class="container text-center mt-5">
+		<span><img data-aos="fade-down" data-aos-duration="1300" data-aos-delay="100" src="images/homepage/about-icon.png"></span>
+		<h3 class="display-4 text-nugs-2" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="100">ABOUT US</h3>
+		<p class="lead" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="150">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<!--END OF ABOUT SECTION-->
+
+	<!--HIGHLIGHTS-->
+	<div class="w-100 bg-light">
+		<div class="container-fluid mt-5 p-4">
+			<div class="row text-center" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+				<div class="col">
+					<h4 class="text-nugs-1">Important Announcements</h4>
+					<p class="lead">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+
+				<div class="col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+					<h4 class="text-nugs-1">Latest News</h4>
+					<p class="lead">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+
+				<div class="col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+					<h4 class="text-nugs-1">Upcoming Events</h4>
+					<p class="lead">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--END OF HIGHLIGHTS SECTION-->
 
 	<!--NUGS-UA Slides-->
 	<div class="container-fluid mt-3">
-		<h1 class="display-4 text-nugs-1" data-aos="flip-up" data-aos-duration="800" data-aos-easing="ease-in-linear" data-aos-delay="200">NUGS-UA</h1>
+		<h1 class="display-4 text-nugs-2" data-aos="flip-up" data-aos-duration="800" data-aos-easing="ease-in-linear" data-aos-delay="200">NUGS-UA</h1>
 		<div class="left-carousel" data-flickity='{ "autoPlay": true , "wrapAround": true }'>
 			<div class="carousel-cell">
 				<h1>
@@ -161,13 +216,13 @@
 				<p class="lead">
 					Our never before Facebook live lectures is the bomb!!!
 
-It's a beautiful initiative geared to assist Ghanaian medical students
-with the GMDC provisional licensure exams...
+					It's a beautiful initiative geared to assist Ghanaian medical students
+					with the GMDC provisional licensure exams...
 
-It's step wise, brief and very easy to understand...
+					It's step wise, brief and very easy to understand...
 
 
-Indeed our pass rate is bound to be bountiful...
+					Indeed our pass rate is bound to be bountiful...
 				</p>
 			</div>
 			<div class="carousel-cell">
@@ -259,6 +314,7 @@ Indeed our pass rate is bound to be bountiful...
 		</div>
 	<!-- </div> -->
 	
+	<!--Section Above footer-->
 	<div id="footer-top" class="w-100">
 		<div class="container pt-2 pb-2">
 			<div class="row">
@@ -305,6 +361,7 @@ Indeed our pass rate is bound to be bountiful...
 			</div>
 		</div>
 	</div>
+	<!--End of section above footer-->
 
 	<!--Footer-->
 	<?php include_once 'includes/footer.php'?>

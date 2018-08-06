@@ -4,6 +4,11 @@ $(function(){
 	$("#mainNavbar").removeClass("bg-white");
 	$("#mainNavbar").addClass("bg-transparent");
 
+	if($(window).scrollTop() > $("#nugs-first").offset().top){
+		$("#mainNavbar").removeClass("bg-transparent");
+		$("#mainNavbar").addClass("bg-white");
+	}
+
 	// JavaScript
 	window.sr = ScrollReveal();
 	sr.reveal('#welcome-section', { duration: 1000 });
