@@ -17,7 +17,7 @@
 				</li>
 
 				<li class="nav-item mr-3">
-					<a href="#" class="nav-link">Blog</a>
+					<a href="#" class="nav-link">News and Events</a>
 				</li>
 
 				<li class="nav-item mr-3">

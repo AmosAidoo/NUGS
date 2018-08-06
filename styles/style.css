@@ -3,9 +3,11 @@ html {
 }
 
 body {
+  width: 100%;
   position: relative;
   min-height: 100%;
   padding-bottom: 80px;
+  overflow-x: hidden;
 }
 
 #mainNavbar li {}
@@ -21,10 +23,6 @@ body {
 .activeTab {
   background-color: pink;
 }
-
-/*#mainNavbar {
-  height: 40px !important;
-}*/
 
 /*Main Carousel*/
 #mainCarousel img{
@@ -58,10 +56,6 @@ body {
 #footer-top nav a {
   color: beige;
 } 
-
-#footer-top ul li {
-  padding-bottom: 10px;
-}
 
 #footer-top ul li a:hover {
   color: #546eea;
@@ -179,6 +173,11 @@ if it's not present, don't show loader */
 
 
 @media (max-width: 767.98px) {
+  #president-img {
+    margin-top: 0 !important;
+    margin-left: 10% !important;
+  }
+
   #batch-col img {
     padding-left: 10%;
   }
@@ -191,7 +190,11 @@ if it's not present, don't show loader */
 
 
 @media (max-width: 991.98px) {
-  #by {
+  .carousel-cell {
+    width: 100%;
+  }
+
+  #president-img {
     margin-top: 100px;
   }
 }

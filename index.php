@@ -53,7 +53,7 @@
 		<div class="container">
 			<div class="row">
 				<div id="batch-col" class="col-md-4 pt-5">
-					<img data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300" src="images/logos/nugs_ukraine.jpg" alt="Large Nugs Image" class="img-fluid mx-auto mb-5">
+					<img data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200" src="images/logos/nugs_ukraine.jpg" alt="Large Nugs Image" class="img-fluid mx-auto mb-5">
 					
 					<blockquote class="blockquote text-center text-nugs-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
 						<i class="fas fa-quote-left"></i>
@@ -91,10 +91,10 @@
 
 	<!--WELCOME NOTE-->
 	<div id="welcome-section" class="w-100 bg-light">
-		<div class="container pt-4 pb-4">
+		<div id="president-col" class="container pt-4 pb-4">
 			<div class="row">
 				<div class="col-md-4" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
-					<img id="by" class="img-fluid rounded-circle mx-auto" src="images/homepage/president.jpg" alt="Note By">
+					<img id="president-img" class="img-fluid rounded-circle mx-auto" src="images/homepage/president.jpg" alt="Note By">
 				</div>
 
 				<div id="welcome-note-col" class="col-md-8"  data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" data-aos-delay="200">
@@ -131,7 +131,7 @@
 	<div class="w-100 bg-light">
 		<div class="container-fluid mt-5 p-4">
 			<div class="row text-center" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
-				<div class="col">
+				<div class="col-md-6 col-lg-4 mb-3">
 					<h4 class="text-nugs-1">Important Announcements</h4>
 					<p class="lead">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -143,7 +143,7 @@
 					</p>
 				</div>
 
-				<div class="col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+				<div class="col-md-6 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
 					<h4 class="text-nugs-1">Latest News</h4>
 					<p class="lead">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -155,7 +155,7 @@
 					</p>
 				</div>
 
-				<div class="col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+				<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
 					<h4 class="text-nugs-1">Upcoming Events</h4>
 					<p class="lead">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -319,7 +319,9 @@
 		<div class="container pt-2 pb-2">
 			<div class="row">
 				<div class="col border-right border-info">
+
 					<ul class="list-unstyled flex-column" data-aos="fade-right" data-aos-duration="1000">
+						<h5>Links</h5>
 						<li><a href="#">Welcome</a></li>
 						<li><a href="#">News and Events</a></li>
 						<li><a href="#">Study in Ukraine</a></li>
