@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<a class="navbar-brand" href="#">
 			<img src="images/logos/nugs_ukraine_logo.png" width="40" height="40" class="d-inline-block align-top" alt="Logo">
-			Nugs UKraine
+			NUGS Ukraine
 		</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,23 +21,23 @@
 				</li>
 
 				<li class="nav-item mr-3">
-					<a id="studyInUkraineLink" href="#" class="nav-link">Study in Ukraine</a>
+					<a id="studyInUkraineLink" href="study_in_ukraine.php" class="nav-link">Study in Ukraine</a>
 				</li>
 
 				<li class="nav-item mr-3">
-					<a id="onlineLibraryLink" href="#" class="nav-link">Online Library</a>
+					<a id="onlineLibraryLink" href="online_library.php" class="nav-link">Online Library</a>
 				</li>
 
 				<li class="nav-item mr-3">
-					<a id="executivesLink" href="#" class="nav-link">Executives</a>
+					<a id="executivesLink" href="executives.php" class="nav-link">Executives</a>
 				</li>
 
 				<li class="nav-item mr-3">
-					<a id="galleryLink" href="#" class="nav-link">Gallery</a>
+					<a id="galleryLink" href="gallery.php" class="nav-link">Gallery</a>
 				</li>
 
 				<li class="nav-item">
-					<a id="contactUsLink" href="#" class="nav-link">Contact Us</a>
+					<a id="contactUsLink" href="contact_us.php" class="nav-link">Contact Us</a>
 				</li>
 			</ul>
 			

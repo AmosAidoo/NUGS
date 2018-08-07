@@ -159,14 +159,17 @@ footer {
   margin-top: 70px;
 }
 
-#blogSidebar {
-  padding-top: 60px;
-}
-
 .featured-carousel-cell {
   height: 200px;
 }
 /*Blog End*/
+
+/*Executives*/
+#executives_body {
+  margin-top: 100px;
+}
+
+/*Executives End*/
 
 
 /* This only works with JavaScript, 
