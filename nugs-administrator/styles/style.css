@@ -1,0 +1,68 @@
+body{
+    background-color: #fbfbfb;
+}
+
+#fixed_left_sidebar {
+    position:fixed;
+    left: 0;
+    width: 20%;
+    min-width: 200px;
+    height: 100%;
+    z-index: 3;
+}
+
+.active_left_link {
+    background-color: #0a0d34;
+}
+
+#fixed_left_sidebar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.side-link:hover {
+    background-color: #0a0d34;
+}
+
+#page_links a {
+    display: block;
+    padding:10px 0 10px 10%;
+}
+
+#page_links a:hover{
+    background-color: #2a2730;
+}
+
+.active_page_links{
+    background-color: #2a2730;
+}
+
+
+#sidebar_bottom {
+    position: absolute;
+    width: 100%;
+    bottom:0;
+}
+
+#sidebar_bottom form {
+    display: inline;
+}
+
+.main_page {
+    margin-left: 20%;
+    width: 80%;
+}
+
+/*Dashboard Styling*/
+#dashboard_main {
+    margin-left: 20%;
+    width: 80%;
+}
+/*End of dashboard Styling*/
+
+
+/*Users Page Styling*/
+#users_main{
+
+}
+/*End of users Syling*/

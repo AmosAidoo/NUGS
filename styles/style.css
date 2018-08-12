@@ -156,7 +156,7 @@ footer {
 
 /*Blog Start*/
 #mainBody {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .featured-carousel-cell {
@@ -169,6 +169,13 @@ footer {
   margin-top: 100px;
 }
 
+#executiveItem:hover {
+  cursor: pointer;
+}
+
+#executivedrop a:hover{
+  background-color: pink;
+} 
 /*Executives End*/
 
 

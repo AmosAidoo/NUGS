@@ -28,12 +28,25 @@
 					<a id="onlineLibraryLink" href="online_library.php" class="nav-link">Online Library</a>
 				</li>
 
-				<li class="nav-item mr-3">
-					<a id="executivesLink" href="executives.php" class="nav-link">Executives</a>
+				<li id="executiveItem" class="nav-item mr-3 dropdown">
+					<a id="executivesLink" class="nav-link dropdown-toggle">Executives</a>
+					<div id="executivedrop" class="dropdown-menu mt-0">
+						<a class="dropdown-item" href="national_executives.php">National Executives</a>
+						<a class="dropdown-item" href="#">Local Executives</a>
+						<a class="dropdown-item" href="#">Committee</a>
+					</div>
 				</li>
 
 				<li class="nav-item mr-3">
 					<a id="galleryLink" href="gallery.php" class="nav-link">Gallery</a>
+				</li>
+
+				<li class="nav-item mr-3 dropdown">
+					<a id="othersLink" href="others.php" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#othersdrop">Others</a>
+					<div id="othersdrop" class="dropdown-menu mt-0">
+						<a class="dropdown-item" href="#">Constitution</a>
+						<a class="dropdown-item" href="#">Passport Renewal</a>
+					</div>
 				</li>
 
 				<li class="nav-item">
@@ -45,3 +58,12 @@
 	</div>
 	
 </nav>
+
+<script type="text/javascript">
+	//Navbar drop
+	$("#executivesLink,#executivedrop").hover(function(){
+		$("#executivedrop").addClass("d-block");
+	},function(){
+		$("#executivedrop").removeClass("d-block");
+	});
+</script>

@@ -21,13 +21,15 @@
         //Initialise AOS
         AOS.init(); 
 
-        $("#mainNavbar").removeClass("bg-white");
-		$("#mainNavbar").addClass("bg-transparent");
+        $(document).ready(function(){
+        	$("#mainNavbar").removeClass("bg-white");
+			$("#mainNavbar,#executivedrop").addClass("bg-transparent");
+        });
     </script>
 
 
     <!--Pre Loader-->
-    <div class="se-pre-con"></div>
+     <div class="se-pre-con"></div> 
 	
 	<!--Navbar-->
 	<?php include_once 'includes/navbar.php'?>
