@@ -7,7 +7,6 @@
  * Time: 2:22 PM
  */
 require_once "Database.php";
-
 class Retrieve {
 
     private $connection;
@@ -38,7 +37,7 @@ class Retrieve {
 
     public function usersCount() : int {
         $row = array("username"=>"","email"=>"",""=>"");
-        $sql = "SELECT username,email,date_joined
+        $sql = "SELECT username
                 FROM users";
         $result = $this->connection->query($sql);
 
@@ -49,12 +48,40 @@ class Retrieve {
         return 0;
     }
 
+    public function postTitles(){
+        $sql = "SELECT id,page_title,`time`
+                FROM blog_pages
+                ORDER BY `id` DESC";
+        $result = $this->connection->query($sql);
+
+        return $result->fetch_all(MYSQLI_ASSOC);
+
+    }
+
+    public function fields(){
+        $sql = "SELECT *
+                FROM fields";
+        $result = $this->connection->query($sql);
+
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
+
+
     public function pagesCount() : int {
 
     }
 
     public function postsCount() : int {
+        $row = array();
+        $sql = "SELECT page_title
+                FROM blog_pages";
+        $result = $this->connection->query($sql);
 
+        if($result->num_rows >= 1){
+            return $result->num_rows;
+        }
+
+        return 0;
     }
 
 }

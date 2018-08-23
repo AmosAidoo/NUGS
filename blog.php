@@ -7,7 +7,7 @@
 <body>
 	<script type="text/javascript">
 		//Initialise AOS
-        AOS.init(); 
+        AOS.init();
 	</script>
 	<!--Navigation Bar-->
 	<?php include_once 'includes/navbar.php';?>
@@ -18,94 +18,33 @@
 		<hr>
 		<div class="row">
 			<div class="col-md-9">
-				
-
+				<?php require_once 'includes/get_post.php' ?>
 				<!--POSTS-->
-				<div class="row border-right">
-					<div class="card-columns">
-						<div class="container-fluid">
-							<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="card mb-3 shadow-sm">
-								<img class="card-img-top" src="images/homepage/carousel/nugs 1.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="text-muted"><?php echo date("D-m-Y")?> | Author</p>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								</div>
-
-								<div class="card-footer">
-									<a href="#" class="btn btn-danger">Read More</a>
-								</div>
-							</div>
-						
-							<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="card mb-3 shadow-sm">
-								<img class="card-img-top" src="images/homepage/carousel/nugs 2.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="text-muted"><?php echo date("D-m-Y")?> | Author</p>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								</div>
-
-								<div class="card-footer">
-									<a href="#" class="btn btn-danger">Read More</a>
-								</div>
+				<?php foreach($posts as $post) : ?>
+					<div class="shadow p-2 mb-4">
+						<h1 class="text-nugs-1"><?php echo $post['page_title']; ?></h1>
+						<p class="text-muted"><?php echo $post['time']; ?> | <?php echo $post['author']; ?></p>
+						<div class="row">
+							<div class="col-md-7">
+								<img class="card-img-top" src="<?php echo $post['page_image']; ?>" alt="Card image cap">
 							</div>
 
-							<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="card mb-3 shadow-sm">
-								<img class="card-img-top" src="images/homepage/carousel/nugs 3.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="text-muted"><?php echo date("D-m-Y")?> | Author</p>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<div class="col-md-5">
+								<div class="post-highlight">
+									<?php echo substr($post['page_content'], 0, 200) ?>
 								</div>
 
-								<div class="card-footer">
-									<a href="#" class="btn btn-danger">Read More</a>
-								</div>
-							</div>
-
-							<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="card mb-3 shadow-sm">
-								<img class="card-img-top" src="images/homepage/carousel/nugs 4.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="text-muted"><?php echo date("D-m-Y")?> | Author</p>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								</div>
-
-								<div class="card-footer">
-									<a href="#" class="btn btn-danger">Read More</a>
-								</div>
-							</div>
-
-							<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="card mb-3 shadow-sm">
-								<img class="card-img-top" src="images/homepage/carousel/nugs 5.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="text-muted"><?php echo date("D-m-Y")?> | Author</p>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								</div>
-
-								<div class="card-footer">
-									<a href="#" class="btn btn-danger">Read More</a>
-								</div>
-							</div>
-
-							<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="card mb-3 shadow-sm">
-								<img class="card-img-top" src="images/homepage/carousel/nugs 1.jpg" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="text-muted"><?php echo date("D-m-Y")?> | Author</p>
-									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								</div>
-
-								<div class="card-footer">
-									<a href="#" class="btn btn-danger">Read More</a>
-								</div>
+								<a href="post.php?id=<?php echo $post['id']; ?>" 
+									class="btn btn-danger" style="position: absolute;bottom: 3%">Read More</a>
 							</div>
 						</div>
-
-
 					</div>
-				</div>
+				<?php endforeach; ?>
+				<script type="text/javascript">
+					$(".post-highlight p").addClass("lead");
+					$(".post-highlight img").addClass("img-fluid");
+					$(".post-highlight table").addClass("table");
+				</script>
 			</div>
 
 			<!--Sidebar-->

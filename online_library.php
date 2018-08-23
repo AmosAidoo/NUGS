@@ -13,6 +13,15 @@
 	<!--Navigation Bar-->
 	<?php include_once 'includes/navbar.php';?>
 
+	<!--Main Page-->
+	<div class="container-fluid mt-5">
+		<h2>Online Library</h2>
+
+		<div>
+			
+		</div>
+	</div>
+
 	<!--Footer-->
 	<?php include_once 'includes/footer.php';?>
 

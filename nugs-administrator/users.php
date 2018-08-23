@@ -134,7 +134,7 @@
 
 
     <script>
-        $("#usersPage").addClass("active_left_link");
+        $("#usersPage").addClass("active_page_link");
     </script>
 </body>
 </html>

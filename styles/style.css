@@ -83,7 +83,7 @@ footer {
 }
 
 /*Flickity Slides*/
-.carousel-cell {
+.carousel-main-cell {
   width: 50%;
   height: 400px;
   margin-right: 10px;
@@ -91,6 +91,11 @@ footer {
   background-size: 100% 100%;
   color: white;
   text-align: center;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 200px;
 }
 
 /* cell number */
@@ -159,9 +164,6 @@ footer {
   margin-top: 100px;
 }
 
-.featured-carousel-cell {
-  height: 200px;
-}
 /*Blog End*/
 
 /*Executives*/
@@ -224,7 +226,7 @@ if it's not present, don't show loader */
     margin: auto !important;
   }
 
-  .carousel-cell {
+  .carousel-main-cell {
     width: 100%;
   }
 

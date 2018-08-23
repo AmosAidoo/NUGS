@@ -1,8 +1,8 @@
 <?php
     session_start();
-    require_once '../config.php';
-	require_once '../includes/classes/Database.php';
 
+    require_once '../includes/classes/Database.php';
+    require_once '../config.php';
 	//Database Object
 	$database = new Database(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
 

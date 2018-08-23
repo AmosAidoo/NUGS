@@ -14,9 +14,9 @@
 	<!--Loader Script-->
 	<script type="text/javascript">
         // Wait for window load
-        $(window).load(function() {
+        /*$(window).load(function() {
             $(".se-pre-con").fadeOut("slow");;
-        });
+        });*/
 
         //Initialise AOS
         AOS.init(); 
@@ -29,7 +29,7 @@
 
 
     <!--Pre Loader-->
-     <div class="se-pre-con"></div> 
+    <!-- <div class="se-pre-con"></div> -->
 	
 	<!--Navbar-->
 	<?php include_once 'includes/navbar.php'?>
@@ -38,10 +38,21 @@
 	<?php include_once 'includes/main_carousel.php'?>
 	<!--End of Main Carousel-->
 
-	<!---->
+	<!--Scroll to top-->
 	<a href="#" id="scroll-to-top" class="bg-danger rounded d-none">
 		<i class="fas fa-angle-up fa-3x pl-2"></i>
 	</a>
+
+	<?php
+		require_once 'nugs-administrator/config.php';
+		require_once 'nugs-administrator/includes/classes/Database.php';
+
+		//Database object
+		$database = new Database(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
+
+	    //Connection object
+	    $conn = $database->connect();
+	?>
 
 	<!--Motto Section-->
 	<div id="nugs-first" class="jumbotron jumbotron-fluid bg-white mt-0">
@@ -93,14 +104,21 @@
 				</div>
 
 				<div id="welcome-note-col" class="col-md-8"  data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" data-aos-delay="200">
-					<h3 class="text-center display-4 text-nugs-1">Welcome</h3>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<?php
+						$sql = "SELECT field_content
+								FROM fields
+								WHERE field_name = 'welcome_section'";
+						$query = $conn->query($sql);
+						$field = $query->fetch_assoc();
+					?>
+					<h3 class="text-center display-4 text-nugs-1">WELCOME</h3>
+					<div id="welcome_content">
+						<?php echo $field['field_content'];?>
+					</div>
 				</div>
+				<script type="text/javascript">
+					$("#welcome_content p").addClass("lead text-center");
+				</script>
 
 			</div>
 		</div>
@@ -110,16 +128,21 @@
 	<!--ABOUT NUGS UKRAINE-->
 	<div class="container text-center mt-5">
 		<span><img data-aos="fade-down" data-aos-duration="1300" data-aos-delay="100" src="images/homepage/about-icon.png"></span>
+		<?php
+			$sql = "SELECT field_content
+					FROM fields
+					WHERE field_name = 'about_us_section'";
+			$query = $conn->query($sql);
+			$field = $query->fetch_assoc();
+		?>
 		<h3 class="display-4 text-nugs-2" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="100">ABOUT US</h3>
-		<p class="lead" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="150">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
+		<div id="about_content" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="150">
+			<?php echo $field['field_content'];?>
+		</div>
 	</div>
+	<script type="text/javascript">
+		$("#about_content p").addClass("lead");
+	</script>
 	<!--END OF ABOUT SECTION-->
 
 	<!--HIGHLIGHTS-->
@@ -170,14 +193,14 @@
 	<div class="container-fluid mt-3">
 		<h1 class="display-4 text-nugs-2" data-aos="flip-up" data-aos-duration="800" data-aos-easing="ease-in-linear" data-aos-delay="200">NUGS-UA</h1>
 		<div class="left-carousel" data-flickity='{ "autoPlay": true , "wrapAround": true }'>
-			<div class="carousel-cell">
+			<div class="carousel-main-cell">
 				<h1 class="mt-4">
 					ALUTA CONTINUA<br><br><br>
 
 					ALUTA VICTORIA
 				</h1>
 			</div>
-			<div class="carousel-cell">
+			<div class="carousel-main-cell">
 				<h1>NUGS-UA CALENDER</h1>
 				<p class="lead">
 					Our all new Calender is epic!!!
@@ -194,7 +217,7 @@
 					to pepper them" is our code
 				</p>
 			</div>
-			<div class="carousel-cell">
+			<div class="carousel-main-cell">
 				<h1>NUGS MEDIA UA</h1>
 				<p class="lead">
 					With the official approval if our all new Media 
@@ -208,7 +231,7 @@
 					The got us covered at all corners
 				</p>
 			</div>
-			<div class="carousel-cell">
+			<div class="carousel-main-cell">
 				<h1>NUGS-UA FACEBOOK LIVE LECTURES</h1>
 				<p class="lead">
 					Our never before Facebook live lectures is the bomb!!!
@@ -222,7 +245,7 @@
 					Indeed our pass rate is bound to be bountiful...
 				</p>
 			</div>
-			<div class="carousel-cell">
+			<div class="carousel-main-cell">
 				<h1>NUGS-UA DATABASE</h1>
 				<p class="lead">
 					Our Co-ordinator are the best there can ever be!!!
@@ -239,7 +262,7 @@
 					Did you register yet? Better hurry
 				</p>
 			</div>
-			<div class="carousel-cell">
+			<div class="carousel-main-cell">
 				<h1>NUGS-UA RESEARCH COMPETITION</h1>
 				<p class="lead">
 					Have you heard of our research competition
@@ -257,7 +280,7 @@
 					Grab your forms now now!!!
 				</p>
 			</div>
-			<div class="carousel-cell">
+			<div class="carousel-main-cell">
 				<h1>NUGS-UA WEBSITE</h1>
 				<p class="lead">
 					Have you checked out our website?
@@ -280,7 +303,7 @@
 					members; concerns, suggestions, on all issues...we are here for you...
 				</p>
 			</div>
-			<div class="carousel-cell">
+			<div class="carousel-main-cell">
 				<h1>REGISTRATION OF NUGS-UA</h1>
 				<p class="lead">
 					The national Executive counsil in her wisdom with the support
@@ -370,6 +393,7 @@
 			$('#homeLink').addClass('activeTab');
 		});
 	</script>
+	<?php $conn->close(); ?>
 
 </body>
 </html>

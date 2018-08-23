@@ -47,7 +47,6 @@
                                         <?php echo $retrieve->usersCount() ?>
                                     </h3>
                                     <h3>USERS</h3>
-
                                 </div>
                             </div>
                         </div>
@@ -55,7 +54,9 @@
                         <div class="col">
                             <div class="card bg-light text-center">
                                 <div class="card-body">
-                                    <h3><i class="fas fa-edit"></i> 0</h3>
+                                    <h3><i class="fas fa-edit"></i>
+                                        <?php echo $retrieve->postsCount() ?>
+                                    </h3>
                                     <h3>POSTS</h3>
 
                                 </div>
